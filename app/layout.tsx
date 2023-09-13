@@ -1,28 +1,25 @@
-import "./globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import './globals.css'
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 
-import { QueryClient, QueryClientProvider } from "react-query";
-
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "PUAS",
-  description: "PUAS Web Application",
-};
-
-const queryClient = new QueryClient();
+  title: 'PUAS',
+  description: 'PRESIDENT UNIVERSITY ALUMNI SOCIETY',
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <QueryClientProvider client={queryClient}>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
-      </html>
-    </QueryClientProvider>
-  );
+    <html lang="en">
+      <head>
+        <link rel='icon' href='/favicon.ico'/>
+      </head>
+      <body className='bg-slate-400'>{children}</body>
+    </html>
+  )
 }
