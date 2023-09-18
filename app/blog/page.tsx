@@ -16,10 +16,10 @@ const page = () => {
                 <div className='w-full mx-auto space-y-10'>
                     
                     {/* Title */}
-                    <h1 className='font-bold text-8xl text-blue-900'>Read Our Blogs</h1>
+                    <h1 className='font-bold text-6xl md:text-8xl lg:text-8xl xl:text-8xl text-blue-900'>Read Our Blogs</h1>
                         
                     {/* Card Grid*/}
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-x-4 gap-y-8">
                             
                         {/* Card */}
                         <a href='#'>

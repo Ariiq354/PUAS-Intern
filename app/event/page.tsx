@@ -23,7 +23,7 @@ const page = () => {
                         
                         {/* Card */}
                         <div className="flex flex-col xl:flex-row shadow hover:shadow-lg w-full bg-white rounded-lg overflow-hidden cursor-pointer">
-                            <div className="object-cover w-full h-full"> 
+                            <div className="object-cover w-full h-full "> 
                             <Image
                                 alt=''
                                 src="/assets/placeholder.jpeg"

@@ -33,8 +33,8 @@ export default function Home() {
       </section>
 
       {/* About Us */}
-      <section className='px-20 bg-white min-h-screen'>
-        <div className='px-10 h-screen flex items-center text-center'>
+      <section className='flex bg-white min-h-screen'>
+        <div className='p-10 h-fit flex items-center text-center'>
           <div className='text-blue-900 mx-auto space-y-10'>
 
             {/* Title & Description */}
@@ -69,8 +69,8 @@ export default function Home() {
       </section>
 
       {/* Blogs */}
-      <section className='px-20 bg-blue-900 min-h-screen'>
-        <div className=' h-screen flex items-center text-center'>
+      <section className='flex bg-blue-900 min-h-screen'>
+        <div className='p-10 h-fit flex items-center text-center'>
           <div className='w-full mx-auto space-y-10'>
 
             {/* Title */}
@@ -150,8 +150,8 @@ export default function Home() {
       </section>
 
       {/* Events */}
-      <section className='px-20 bg-white min-h-screen'>
-        <div className='px-10 h-screen flex items-center text-center justify-center text-blue-900'>
+      <section className='flex bg-white min-h-screen'>
+        <div className='p-10 h-fit flex items-center text-center justify-center text-blue-900'>
           <div className='w-full mx-auto space-y-10'>
 
             {/* Title */}
@@ -277,8 +277,8 @@ export default function Home() {
       </section>
 
       {/* Gallery */}
-      <section className='px-20 bg-blue-900 min-h-screen'>
-        <div className='px-10 h-screen flex items-center text-center justify-center text-white'>
+      <section className='flex bg-blue-900 min-h-screen'>
+        <div className='p-10 h-fit flex items-center text-center justify-center text-white'>
           <div className='w-full mx-auto space-y-10'>
 
             {/* Title */}

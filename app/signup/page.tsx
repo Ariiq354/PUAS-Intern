@@ -20,23 +20,33 @@ const page = () => {
   return (
     <main>
       <PageHeader />
-      <section className='h-screen'>
+      <section className='min-h-screen'>
 
-        <div className="grid grid-cols-5 grid-rows-1 h-screen">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-col-2 xl:grid-cols-2 grid-rows-1 min-h-screen h-fit">
 
-          {/* Logo */}
-          <div className="col-span-3 bg-cover bg-no-repeat bg-[url(/assets/placeholder.jpeg)] grid place-items-center">
-          {/* <div className="col-span-3 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-300 via-blue-100 to-white grid place-items-center"> */}
-              <Image 
-                src='/assets/logo.png'
-                alt=""
-                width={750}
-                height={500}
-                className="static"/>
-          </div>
+           {/* Logo */}
+           <div className="
+              min-h-screen h-fit py-48 max-w-full
+              bg-cover bg-no-repeat bg-[url(/assets/placeholder.jpeg)]
+              ">
+                  
+              <div className="flex items-center justify-center h-full">
+                  <Image 
+                    src='/assets/logo.png'
+                    alt=""
+                    width={750}
+                    height={500}
+                    className="w-4/5 h-auto"/>
+              </div>
+                    
+            </div>
 
           {/* Form */}
-          <div className="col-span-2 col-start-4 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-300 via-blue-100 to-white grid place-items-center">
+          <div className="
+            p-8
+            h-auto max-w-full
+            bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-300 via-blue-100 to-white grid place-items-center">
+
               <Card className="w-[450px]">
                 <CardHeader>
                     <CardTitle>Sign Up</CardTitle>
@@ -81,9 +91,8 @@ const page = () => {
                 </CardFooter>
               </Card>
           </div>
-          
-        </div>
-
+      
+      </div>
       </section>
 
       <section className='bg-white min-h-fit'>

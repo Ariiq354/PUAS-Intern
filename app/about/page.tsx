@@ -13,10 +13,9 @@ const page = () => {
         <PageHeader/>
 
         {/* Details */}
-        <section className='flex flex-col min-h-screen'>
-        
-            <div className='px-20 bg-blue-900 min-h-screen flex items-center'>
-                <div className='px-10 h-screen flex items-center text-center'>
+        <section className='bg-blue-900 min-h-screen'>
+            <div className='px-20 flex items-center'>
+                <div className='h-screen flex items-center text-center'>
                     <div className='text-white mx-auto space-y-10'>
                         <h1 className='font-bold text-8xl'>About Us</h1>
                         <p className='text-2xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab vero obcaecati at itaque voluptatum enim commodi. Provident eum nostrum nulla neque. Incidunt ducimus laboriosam voluptatibus expedita, temporibus earum laudantium quibusdam! </p>
@@ -26,88 +25,88 @@ const page = () => {
         </section>
         
         {/* Vision Mission */}
-        <section className='flex flex-col min-h-screen'>
-            <div className='px-20 bg-white min-h-screen flex items-center'>
-                <div className="py-10 w-full h-screen text-white grid grid-cols-5 grid-rows-5 gap-4">
+        <section className='flex flex-col min-h-screen bg-white items-center'>
+                <div className="h-fit md:h-fit text-white px-20">
 
                     {/* Title */}
-                    <div className="col-span-5">
+                    <div className="col-span-5 py-12 ">
                         <h1 className='font-bold text-8xl text-center text-blue-900'>Our Vision & Mission</h1>
                     </div>
 
-                    {/* Vission & Mission */}
-                    <div className="col-span-2 row-span-4 row-start-2 space-y-5 text-blue-900">
-                        <h1 className='font-bold text-8xl'>Vision</h1>
-                        <p className='text-2xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab vero obcaecati at itaque voluptatum enim commodi. Provident eum nostrum nulla neque. Incidunt ducimus laboriosam voluptatibus expedita, temporibus earum laudantium quibusdam! </p>
-                        <h1 className='font-bold text-8xl'>Mission</h1>
-                        <p className='text-2xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab vero obcaecati at itaque voluptatum enim commodi. Provident eum nostrum nulla neque. Incidunt ducimus laboriosam voluptatibus expedita, temporibus earum laudantium quibusdam! </p>
-                    </div>
-
-                    {/* Image */}
-                    <div className="col-span-2 row-span-4 col-start-4 row-start-2 text-blue-900 space-y-4">
-                        <div className='w-auto h-[50%]'>
-                            <Image 
-                            alt=''
-                            width={1000}
-                            height={1000}
-                            src='/assets/placeholder.jpeg'/>
+                    {/* Vision and Mission */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 grid-rows-2 gap-y-12 w-fit text-blue-900 pb-12">
+                        <div className='text-center md:text-left lg:text-left xl:text-left'>
+                            <h1 className='font-bold text-6xl pb-8'>Vision</h1>
+                            <p className='text-2xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab vero obcaecati at itaque voluptatum enim commodi. Provident eum nostrum nulla neque. Incidunt ducimus laboriosam voluptatibus expedita, temporibus earum laudantium quibusdam! </p>
                         </div>
-                        <div className='w-auto h-[50%]'>
-                            <Image 
-                            alt=''
-                            width={1000}
-                            height={1000}
-                            src='/assets/placeholder.jpeg'/>
+                        <div>
+                            <div className='w-4/6 h-auto mx-auto'>
+                                <Image 
+                                alt=''
+                                width={1000}
+                                height={1000}
+                                src='/assets/placeholder.jpeg'/>
+                            </div>
+                        </div>
+
+                        <div className='text-center md:text-left lg:text-left xl:text-left'>
+                            <h1 className='font-bold text-6xl pb-8'>Mission</h1>
+                            <p className='text-2xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab vero obcaecati at itaque voluptatum enim commodi. Provident eum nostrum nulla neque. Incidunt ducimus laboriosam voluptatibus expedita, temporibus earum laudantium quibusdam! </p>
+                        </div>
+                        <div>
+                            <div className='w-4/6 h-auto mx-auto'>
+                                <Image 
+                                alt=''
+                                width={1000}
+                                height={1000}
+                                src='/assets/placeholder.jpeg'/>
+                            </div>
                         </div>
                     </div>
 
                 </div>
-            </div>
         </section>
 
         {/* Founders */}
-        <section className='flex flex-col min-h-screen'>
-            <div className='px-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-300 via-white to-white flex items-center'>
-                <div className='px-10 h-screen flex items-center text-center'>
-                    <div className='text-white mx-auto space-y-10'>
+        <section className='min-h-screen h-fit bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-300 via-white to-white flex items-center'>
+                <div className='flex items-center text-center'>
+                    <div className='mx-auto space-y-10'>
 
                         {/* Title & Description */}
                         <div className='text-blue-900'>
-                            <h1 className='font-bold text-8xl'>Meet Our Leaders</h1>
+                            <h1 className='font-bold text-8xl pb-10'>Meet Our Leaders</h1>
                             <p className='text-2xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab vero obcaecati at itaque voluptatum enim commodi. Provident eum nostrum nulla neque. Incidunt ducimus laboriosam voluptatibus expedita, temporibus earum laudantium quibusdam! </p>
                         </div>
 
                         {/* Founders Details */}
-                        <div className="grid grid-cols-4 grid-rows-2 gap-10  text-blue-900 ">
-                            <div className="row-span-2">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 grid-rows-1 gap-10 text-blue-900">
+                            <div >
                                 <Avatar>
-                                    <AvatarImage className='rounded-full w-96 h-96' src='/assets/placeholder.jpeg' alt="@shadcn" />
+                                    <AvatarImage className='rounded-full w-96 h-96 mx-auto' src='/assets/placeholder.jpeg' alt="@shadcn" />
                                 </Avatar>
                                 <p className='text-2xl'>Lorem Ipsum</p>
                             </div>
-                            <div className="row-span-2">
+                            <div >
                                 <Avatar>
-                                    <AvatarImage className='rounded-full w-96 h-96' src='/assets/placeholder.jpeg' alt="@shadcn" />
+                                    <AvatarImage className='rounded-full w-96 h-96 mx-auto' src='/assets/placeholder.jpeg' alt="@shadcn" />
                                 </Avatar>
                                 <p className='text-2xl'>Lorem Ipsum</p>
                             </div>
-                            <div className="row-span-2">
+                            <div >
                                 <Avatar>
-                                    <AvatarImage className='rounded-full w-96 h-96' src='/assets/placeholder.jpeg' alt="@shadcn" />
+                                    <AvatarImage className='rounded-full w-96 h-96 mx-auto' src='/assets/placeholder.jpeg' alt="@shadcn" />
                                 </Avatar>
                                 <p className='text-2xl'>Lorem Ipsum</p>
                             </div>
-                            <div className="row-span-2">
+                            <div >
                                 <Avatar>
-                                    <AvatarImage className='rounded-full w-96 h-96' src='/assets/placeholder.jpeg' alt="@shadcn" />
+                                    <AvatarImage className='rounded-full w-96 h-96 mx-auto' src='/assets/placeholder.jpeg' alt="@shadcn" />
                                 </Avatar>
                                 <p className='text-2xl'>Lorem Ipsum</p>
                             </div>
                         </div>
-    
                     </div>
                 </div>
-            </div>
         </section>
         
         {/* Footer */}
