@@ -1,4 +1,4 @@
-import Footer from '@/components/Footer'
+import Footer from '@/components/PageFooter'
 import PageHeader from '@/components/PageHeader'
 import {
   Card,
@@ -18,7 +18,7 @@ const page = () => {
   return (
     <main>
       <PageHeader/>
-      <section className='flex flex-col min-h-screen bg-blue-900'>
+      <section className='pt-24 flex flex-col min-h-screen bg-blue-900'>
         <div className="p-48 flex">
 
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-col-2 xl:grid-cols-2 grid-rows-1 gap-4">
