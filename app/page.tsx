@@ -1,8 +1,9 @@
-import Footer from '@/components/Footer'
+import Footer from '@/components/PageFooter'
 import PageHeader from '@/components/PageHeader'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       <PageHeader/>
 
       {/* Hero Section */}
-      <section className='flex flex-col min-h-screen bg-no-repeat bg-cover bg-[url(/assets/heroImage.svg)]'>
+      <section className='flex flex-col pt-24 min-h-screen bg-no-repeat bg-cover bg-[url(/assets/heroImage.svg)]'>
         <div className='px-20 h-screen flex items-center bg-transparent bg-gradient-to-t from-black w-full '>
           <div className='text-white mx-auto space-y-4'>
 
@@ -161,10 +162,11 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
 
               {/* Card */}
-              <div className="flex flex-col xl:flex-row shadow hover:shadow-lg w-full bg-white rounded-lg overflow-hidden cursor-pointer">
-                <div className="object-cover w-full h-full"> 
+              <Link href="#" className="flex flex-col xl:flex-row shadow hover:shadow-lg w-full bg-white rounded-lg overflow-hidden cursor-pointer">
+                <div className="w-fit object-cover"> 
                   <Image
                     alt=''
+                    className=''
                     src="/assets/placeholder.jpeg"
                     width={1000}
                     height={2000}
@@ -180,7 +182,7 @@ export default function Home() {
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit ad assumenda.
                   </p>
                 </div>
-              </div>
+              </Link>
 
               {/* Card */}
               <div className="flex flex-col xl:flex-row shadow hover:shadow-lg w-full bg-white rounded-lg overflow-hidden cursor-pointer">
@@ -278,7 +280,7 @@ export default function Home() {
 
       {/* Gallery */}
       <section className='flex bg-blue-900 min-h-screen'>
-        <div className='p-10 h-fit flex items-center text-center justify-center text-white'>
+      <div className='p-10 h-fit flex items-center text-center justify-center text-white'>
           <div className='w-full mx-auto space-y-10'>
 
             {/* Title */}

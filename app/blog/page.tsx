@@ -1,4 +1,4 @@
-import Footer from '@/components/Footer'
+import Footer from '@/components/PageFooter'
 import PageHeader from '@/components/PageHeader'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
@@ -10,7 +10,7 @@ const page = () => {
     <main>
         <PageHeader/>
         
-        <section className='flex flex-col min-h-screen'>
+        <section className='flex flex-col pt-24 min-h-screen'>
         <div className='px-20 bg-gradient-to-b from-blue-100 to-white min-h-screen flex items-center'>
             <div className=' h-flex py-32 flex items-center text-center'>
                 <div className='w-full mx-auto space-y-10'>

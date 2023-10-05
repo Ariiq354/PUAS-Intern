@@ -1,6 +1,6 @@
 "use client";
 
-import Footer from '@/components/Footer'
+import Footer from '@/components/PageFooter'
 import PageHeader from '@/components/PageHeader'
 import { Button } from '@/components/ui/button'
 import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar'
@@ -13,7 +13,7 @@ const page = () => {
         <PageHeader/>
 
         {/* Details */}
-        <section className='bg-blue-900 min-h-screen'>
+        <section className='bg-blue-900 pt-24 min-h-screen'>
             <div className='px-20 flex items-center'>
                 <div className='h-screen flex items-center text-center'>
                     <div className='text-white mx-auto space-y-10'>

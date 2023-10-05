@@ -1,6 +1,6 @@
 "use client";
 
-import Footer from "@/components/Footer";
+import Footer from "@/components/PageFooter";
 import PageHeader from "@/components/PageHeader";
 import { Button } from "@/components/ui/button"
 import {
@@ -20,7 +20,7 @@ const page = () => {
   return (
     <main>
         <PageHeader />
-        <section className='min-h-screen'>
+        <section className='pt-24 min-h-screen'>
 
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-col-2 xl:grid-cols-2 grid-rows-1 min-h-screen h-fit">
 
